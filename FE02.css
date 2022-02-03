@@ -1,15 +1,10 @@
+/* this added the jedi font to the display */
 @font-face {
   font-family: StarJediHollow-A4lL;
   src: URL(StarJediHollow-A4lL.ttf) format("opentype");
 }
-.heading {
-  font-weight: bolder;
-  color: white;
-  font-family: "Star Jedi";
-  font-size: 4vw;
-  text-shadow: 4px 4px 4px #aaa;
-  margin-left: 40px;
-}
+
+/* tags wise selection  body and image  */
 body {
   background-image: url("https://mcdn.wallpapersafari.com/medium/78/98/5R2EL3.jpg");
   font-family: StarJediHollow-A4lL;
@@ -23,6 +18,19 @@ img {
   width: 100%;
   object-fit: fill;
 }
+
+/* classes wise selection */
+
+/* heading content styles here  */
+
+.heading {
+  font-weight: bolder;
+  color: white;
+  font-family: "Star Jedi";
+  font-size: 4vw;
+  text-shadow: 4px 4px 4px #aaa;
+  margin-left: 40px;
+}
 .container {
   box-sizing: border-box;
   margin: auto;
@@ -31,6 +39,17 @@ img {
   display: flex;
   flex-direction: column;
 }
+/* class precedence is like 
+DOM Tree
+
+    one ----------------outer-two
+                two-one ----------------two-two
+                        two-two-one------two-two-two-----two-two-three  
+                                two-two-two-one---two-two-two-two
+                                                                
+
+
+*/
 
 .one {
   border-radius: 500px;
